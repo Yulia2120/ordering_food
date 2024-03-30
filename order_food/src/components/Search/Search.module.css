@@ -1,0 +1,29 @@
+.input {
+  min-width: 256px;
+  height: 51px;
+  padding: 16px 30px 16px 44px;
+  color: var(--text-black);
+  font-family: var(--ff-main);
+
+  font-weight: 400;
+  line-height: 1.357;
+  border: 1px solid var(--text-placeholder);
+  border-radius: 10px;
+  background-color: var(--bg-placeholder);
+  box-shadow: var(--box-shadow-input);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.input:placeholder {
+  color: #9aa0b4;
+  font-size: 14px;
+}

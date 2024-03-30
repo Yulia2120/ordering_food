@@ -1,0 +1,12 @@
+.input {
+  padding: 20px;
+  color: var(--text-black);
+  font-family: var(--ff-main);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1, 3529;
+  text-align: left;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-input);
+}

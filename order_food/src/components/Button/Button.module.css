@@ -1,0 +1,36 @@
+.button {
+  font-family: var(--ff-main);
+  border: none;
+  border-radius: 28.5px;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  transition: background-color 0.25s;
+  box-shadow: var(--box-shadow-button);
+}
+
+.small {
+  width: 117px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+
+.big {
+  width: 248px;
+  height: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.333;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.accent {
+  background-color: var(--primary-color);
+}
+
+.accent:hover {
+  background-color: var(--primary-hover-color);
+}
