@@ -8,8 +8,14 @@ function ProductCard(props: ProductCardProps) {
       <div className={styles["card"]}>
         <div
           className={styles["head"]}
-          style={{ backgroundImage: `url(${props.image})` }}
+          // style={{ backgroundImage: `url(${props.image})` }}
         >
+          <img
+            className={styles["image"]}
+            src={props.image}
+            alt={props.title}
+          />
+
           <div className={styles["price"]}>
             {props.price}&nbsp;
             <span className={styles["currency"]}>UAN</span>

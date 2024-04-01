@@ -5,12 +5,21 @@
 
 .head {
   position: relative;
-  min-height: 165px;
+  height: 165px;
   border-top-left-radius: 19px;
   border-top-right-radius: 19px;
 }
+.image {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  object-fit: cover;
+}
+
 .card {
   width: 320px;
+  height: 248px;
   background-color: #fff;
   border-radius: 19px;
   box-shadow: 18.21px 18.21px 36.43px 0px rgba(211, 209, 216, 0.25);
@@ -18,6 +27,7 @@
 .footer {
   padding: 12px;
 }
+
 .title {
   color: var(--text-black);
   font-size: 18px;
