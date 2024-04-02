@@ -42,3 +42,10 @@
 .links a:hover {
   color: var(--primary-hover-color);
 }
+
+.error {
+  background-color: #ffc529;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}

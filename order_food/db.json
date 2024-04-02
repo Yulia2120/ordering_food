@@ -1,98 +1,181 @@
 {
+  "users": [
+    {
+      "id": "1",
+      "email": "figaro@gmail.com",
+      "password": "123",
+      "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJmaWdhcm9AZ21haWwuY29tIiwiaWF0IjoxNTE2MjM5MDIyfQ.uAz7Oi3q8h__H2Ds5dR3_1mCaWB-K5lP0cWC9RDMsYU"
+    },
+    {
+      "id": "6daa",
+      "email": "figaro@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "572b",
+      "email": "alice@gmail.com",
+      "password": "22222"
+    },
+    {
+      "id": "5e7e",
+      "email": "Obus_ks74@student.itstep.org",
+      "password": "12345"
+    }
+  ],
+  "message": [],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Наслаждение",
       "price": 300,
-      "ingredients": ["салями", "руккола", "помидоры", "оливки"],
+      "ingredients": [
+        "салями",
+        "руккола",
+        "помидоры",
+        "оливки"
+      ],
       "image": "https://source.unsplash.com/400x300/?salami",
       "rating": 4.7
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Пицца Карбонара",
       "price": 400,
-      "ingredients": ["бекон", "сыр", "яйцо", "томатный соус"],
+      "ingredients": [
+        "бекон",
+        "сыр",
+        "яйцо",
+        "томатный соус"
+      ],
       "image": "https://source.unsplash.com/400x300/?pizza",
       "rating": 4.8
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Фруктовый салат",
       "price": 250,
-      "ingredients": ["яблоко", "банан", "киви", "апельсин"],
+      "ingredients": [
+        "яблоко",
+        "банан",
+        "киви",
+        "апельсин"
+      ],
       "image": "https://source.unsplash.com/400x300/?fruit",
       "rating": 4.5
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Бургер с курицей",
       "price": 350,
-      "ingredients": ["курица", "сыр", "огурец", "томат"],
+      "ingredients": [
+        "курица",
+        "сыр",
+        "огурец",
+        "томат"
+      ],
       "image": "https://source.unsplash.com/400x300/?burger",
       "rating": 4.6
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Суп с грибами",
       "price": 200,
-      "ingredients": ["грибы", "картофель", "морковь", "лук"],
+      "ingredients": [
+        "грибы",
+        "картофель",
+        "морковь",
+        "лук"
+      ],
       "image": "https://source.unsplash.com/400x300/?soup",
       "rating": 4.4
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Зеленый салат",
       "price": 300,
-      "ingredients": ["огурец", "орехи", "перец"],
+      "ingredients": [
+        "огурец",
+        "орехи",
+        "перец"
+      ],
       "image": "https://source.unsplash.com/400x300/?salad",
       "rating": 4.5
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Сырная тарелка",
       "price": 500,
-      "ingredients": ["пармезан", "гауда", "дор-блю", "виноград"],
+      "ingredients": [
+        "пармезан",
+        "гауда",
+        "дор-блю",
+        "виноград"
+      ],
       "image": "https://source.unsplash.com/400x300/?cheese",
       "rating": 4.9
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Лосось гриль",
       "price": 600,
-      "ingredients": ["лосось", "лимон", "зелень", "масло"],
+      "ingredients": [
+        "лосось",
+        "лимон",
+        "зелень",
+        "масло"
+      ],
       "image": "https://source.unsplash.com/400x300/?salmon",
       "rating": 4.8
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Спагетти карбонара",
       "price": 400,
-      "ingredients": ["спагетти", "бекон", "яйцо", "сыр"],
+      "ingredients": [
+        "спагетти",
+        "бекон",
+        "яйцо",
+        "сыр"
+      ],
       "image": "https://source.unsplash.com/400x300/?spaghetti",
       "rating": 4.7
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Салат Цезарь",
       "price": 350,
-      "ingredients": ["курица", "салат", "пармезан", "соус Цезарь"],
+      "ingredients": [
+        "курица",
+        "салат",
+        "пармезан",
+        "соус Цезарь"
+      ],
       "image": "https://source.unsplash.com/400x300/?caesar-salad",
       "rating": 4.6
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Стейк с картошкой",
       "price": 700,
-      "ingredients": ["говядина", "картошка", "зелень", "перец"],
+      "ingredients": [
+        "говядина",
+        "картошка",
+        "зелень",
+        "перец"
+      ],
       "image": "https://source.unsplash.com/400x300/?steak",
       "rating": 4.9
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Фруктовый коктейль",
       "price": 200,
-      "ingredients": ["ананас", "клубника", "манго", "апельсин"],
+      "ingredients": [
+        "ананас",
+        "клубника",
+        "манго",
+        "апельсин"
+      ],
       "image": "https://source.unsplash.com/400x300/?cocktail",
       "rating": 4.4
     }
