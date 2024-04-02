@@ -1,0 +1,44 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.form {
+  width: 100%;
+  min-width: 324px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form button {
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.field label {
+  color: var(--text-placeholder);
+  font-size: 17px;
+  line-height: 1.3529;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3571;
+}
+.links a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.links a:hover {
+  color: var(--primary-hover-color);
+}

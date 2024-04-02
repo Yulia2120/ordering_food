@@ -1,15 +1,18 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-
+import { RouterProvider, createBrowserRouter, defer } from "react-router-dom";
 import "./index.css";
-import { Menu } from "./pages/Menu/Menu";
 import { Cart } from "./pages/Cart/Cart";
 import { Error } from "./pages/Error/Error";
 import { Layout } from "./layout/Layout/Layout";
 import { Product } from "./pages/Product/Product";
 import axios from "axios";
 import { PREFIX } from "./components/helpers/api";
+import { AuthLayout } from "./layout/Auth/AuthLayout";
+import { Login } from "./pages/Login/Login";
+import { Register } from "./pages/Register/Register";
+
+const Menu = lazy(() => import("./pages/Menu/Menu"));
 
 const router = createBrowserRouter([
   {
@@ -18,7 +21,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Menu />,
+        element: (
+          <Suspense fallback={<>Loading...</>}>
+            <Menu />
+          </Suspense>
+        ),
       },
       {
         path: "/cart",
@@ -29,9 +36,31 @@ const router = createBrowserRouter([
         element: <Product />,
         errorElement: <>Error</>,
         loader: async ({ params }) => {
-          const { data } = await axios.get(`${PREFIX}products/${params.id}`);
-          return data;
+          return defer({
+            data: new Promise((resolve, reject) => {
+              setTimeout(() => {
+                axios
+                  .get(`${PREFIX}/products/${params.id}`)
+                  .then((data) => resolve(data))
+                  .catch((e) => reject(e));
+              }, 1000);
+            }),
+          });
         },
+      },
+    ],
+  },
+  {
+    path: "/auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "login",
+        element: <Login />,
+      },
+      {
+        path: "register",
+        element: <Register />,
       },
     ],
   },
