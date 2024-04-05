@@ -1,0 +1,5 @@
+npx prisma format // форматирование
+
+npx prisma db push
+
+npx prisma studio
