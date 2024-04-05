@@ -1,5 +1,12 @@
-npx prisma format // форматирование
+npx prisma format - форматирование
 
 npx prisma db push
 
-npx prisma studio
+npx prisma studio - запуск
+
+
+npx prisma migrate save --name addNewFieldToUser
+
+npx prisma migrate save --name addMultipleFieldsToUser
+
+npx prisma migrate up --experimental - применит созданную миграцию к вашей базе данных.
