@@ -10,3 +10,5 @@ npx prisma migrate save --name addNewFieldToUser
 npx prisma migrate save --name addMultipleFieldsToUser
 
 npx prisma migrate up --experimental - применит созданную миграцию к вашей базе данных.
+
+npx prisma db push -- для синхронизации с изменениями после миграции
