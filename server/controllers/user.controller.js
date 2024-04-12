@@ -126,10 +126,6 @@ const UserController = {
         }
       }
 
-      console.log("Email:", email);
-      console.log("ID:", id);
-      console.log("Existing user:", existingUser);
-
       const updatedUser = await prisma.user.update({
         where: { id },
         data: {
@@ -147,7 +143,20 @@ const UserController = {
   },
 
   current: async (req, res) => {
-    res.send("current");
+    try {
+      const user = await prisma.user.findUnique({
+        where: {
+          id: req.user.userId,
+        },
+      });
+      if (!user) {
+        return res.status(400).json({ error: "Не удалось найти пользователя" });
+      }
+      return res.status(200).json(user);
+    } catch (error) {
+      console.error("Get Current Error", error);
+      res.status(500).json({ error: "Что-то пошло не так" });
+    }
   },
 };
 module.exports = UserController;
